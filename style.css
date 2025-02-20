@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #F6EFE0;
+    --secondary-color: #008060;
+    --font-size: 16px;
+    --padding: 10px;
+}
+
+
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+a {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+h1 {
+    color: #1A1A1A;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+h5 {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn {
+    color: #FFF;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 500px;
+    background: var(--secondary-color);
+    padding: 15px 16px 17px 25px;
+    border: none;
+}
+
+
+
+
+
+.nav-bar {
+    display: flex;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    max-width: 1600px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 25px 46px 26px 50px;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.logo {
+    height: 67px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+
+nav .btn {
+    margin-left: 56px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.hero-section {
+    background-color: var(--primary-color);
+    background-image: url(./assests/background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 155px;
+    position: relative;
+}
+
+.hero-inner {
+    display: flex;
+    gap: 96px;
+}
+
+.hero-content {
+    padding-top: 276px;
+    max-width: 805px;
+    flex: 50%;
+}
+
+.shopify-logos {
+    display: flex;
+    gap: 14px;
+    margin-top: 37px;
+}
+
+.hero-content .btn {
+    padding: 15px 45px 17px 45px;
+    margin-top: 92px;
+}
+
+.hero-right {
+    flex: 50%;
+    
+}
+
+.hero-images{
+    position: absolute;
+    top: 14px;
+    right: 0;
+   
+}
+
+.hero-images img {
+    max-width: 923px;
+    width: 100%;
+    height: auto;
+
+}
+
+.badge {
+    position: absolute;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 13px 18px 18px 21px;
+}
+.badge-partner{
+    top: 235px;
+    right: 722px;
+}
+.badge-experts{
+    top: 392px;
+    right: 31px;
+}
+.badge-app-store{
+    bottom: 52px;
+    right: 530px;
+}
