@@ -368,6 +368,14 @@ nav ul li a:hover {
 
 .question-side ul li:hover {
   cursor: pointer;
+  color: #000;
+}
+.question-side li:hover svg rect {
+  fill: #1A1A1A; 
+}
+
+.question-side li:hover svg path {
+  fill: white; 
 }
 
 .question-side ul li span {
