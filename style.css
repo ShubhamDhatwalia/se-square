@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Cal Sans';
+    src: url('./font/CalSans-SemiBold.woff2') format('woff2'),
+        url('./font/CalSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -35,7 +46,7 @@ a {
 
 h1 {
     color: #1A1A1A;
-    font-family: "Cal Sans", sans-serif;
+    font-family: "Cal Sans";
     font-size: 80px;
     font-style: normal;
     font-weight: 600;
@@ -149,6 +160,7 @@ p {
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.10);
     box-sizing: border-box;
     z-index: 2;
+    width: calc(100% - 30px) !important;
 }
 
 .logo {
@@ -416,12 +428,17 @@ nav ul li a:hover {
     line-height: normal;
 }
 
+.side-one, .side-two {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
 .stores-details {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 81px;
-    gap: 69px;
+    gap: 20px;
 }
 
 .showCaseSwiperDown .swiper-wrapper,
@@ -438,6 +455,7 @@ nav ul li a:hover {
 
 .show-case-sliders {
     display: flex;
+    gap: 20px;
 }
 
 
@@ -451,6 +469,7 @@ nav ul li a:hover {
 
 .startups {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     margin-top: 42px;
@@ -545,6 +564,7 @@ nav ul li a:hover {
     margin-right: 46px;
     /* margin-bottom: 13px; */
 }
+
 .deliver-content ul li {
     display: flex;
     align-items: center;
@@ -611,20 +631,22 @@ nav ul li a:hover {
 
 @keyframes rotate360 {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
 
-.animated-logo{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.animated-logo {
     animation: rotate360 8s linear infinite;
 }
 
 .faq-section {
     padding-top: 144px;
+    padding-bottom: 140px;
     background: #FFFCF5;
 }
 
@@ -632,7 +654,7 @@ nav ul li a:hover {
     border-radius: 30px;
     background: #FFF;
     text-align: center;
-    padding: 100px 125px 0 125px;
+    padding: 100px 125px 143px 125px;
 }
 
 .faq p {
@@ -645,6 +667,358 @@ nav ul li a:hover {
     line-height: 32px;
     /* 160% */
 }
-.faq-taber{
+
+.faq-taber {
     margin-top: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+
+.taber-content {
+    border-radius: 10px;
+    background: #F6EFE0;
+    padding: 30px 30px 27px 57px;
+    flex: 49%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tab-question {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.tab-question h6 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.tab-answer p {
+    overflow: hidden;
+    padding-left: 35px;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 32px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+}
+
+.tab-answer p.expanded {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    text-overflow: unset;
+
+}
+
+
+
+.subscription {
+    text-align: center;
+    background-color: rgb(53, 53, 53) !important;
+    background-image: url(./assests/subcription-background.png);
+    padding-bottom: 186px;
+}
+
+.subscription h3 {
+    color: #FFF;
+    max-width: 797px;
+    padding-top: 156px;
+    margin: auto;
+}
+
+.subscription input {
+
+
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #8B8B8B !important;
+
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    width: 100%;
+    padding: 24px 0;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.subscription input:focus {
+    outline: none;
+}
+
+.subscription .input-group {
+    position: relative;
+
+    max-width: 1060px;
+    margin: 131px auto 0 auto;
+
+}
+
+.subscription .input-group button {
+
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-family: "Cal Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.main-footer {
+    background-color: #000;
+    padding-top: 136px;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+    /* position: relative; */
+}
+
+.main-footer .container{
+    position: relative;
+}
+.main-footer .main-footer-background{
+    position: absolute;
+    right: 0;
+}
+.main-footer h2 {
+    max-width: 600px;
+    font-size: 70px;
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+}
+
+.main-footer .btn {
+    background: #FFF;
+    color: #1A1A1A;
+    margin: auto;
+    margin-top: 76px;
+}
+
+.main-footer .btn span {
+    background: #D6D6D6;
+}
+
+.footer-categories {
+    display: flex;
+    margin-top: 248px;
+    text-align: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 127px;
+    border-bottom: 1px solid #2C2C2C;
+
+}
+
+.footer-categories h6,
+.footer-categories ul,
+.footer-categories a {
+    color: #FFF;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.footer-categories h6 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.footer-categories ul {
+    margin-top: 60px;
+}
+
+.footer-categories ul li a {
+    color: #FFF;
+    opacity: 0.7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.footer-categories ul li a:hover {
+    opacity: 1;
+}
+
+.footer-categories p {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 374.857px;
+    ;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+}
+
+.get-in-touch ul {
+    display: flex;
+    gap: 14px;
+}
+
+.copy-right {
+    padding: 38px 0;
+}
+
+.copy-right p {
+
+    color: #FFF !important;
+    color: #FFF;
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+}
+
+
+.sitemap,
+.services {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services h6{
+    margin-left: -60px;
+}
+.sitemap{
+    border-right: 1px solid #2C2C2C;
+
+}
+.middle {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    border-left: 1px solid #2C2C2C;
+    border-right: 1px solid #2C2C2C;
+}
+
+
+nav i {
+    font-size: 32px;
+}
+nav .menu-bar{
+    display: none;
+}
+
+.overlay {
+    height: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay.active {
+    display: flex;
+    height: 100%;
+}
+.overlay nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay nav ul li a{
+    color: #FFF;
+    font-size: 20px;
+}
+.overlay nav ul li a:hover{
+    color: var(--secondary-color);
+}
+.overlay .close-btn{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 42px;
+    color: #FFF;
+}
+.overlay nav .btn{
+    margin: 0px;
+}
+
+@media  screen and (max-width: 1600px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media  screen and (max-width: 1440px) {
+    nav ul {
+        gap: 40px !important;
+    }
+    .question-side ul{
+        font-size: 40px;
+    }
+    .question-side ul li{
+        padding: 30px 0;
+    }
+    h3{
+        font-size: 35px;
+        line-height: normal;
+    }
+    .deliver-inner{
+        align-items: center;
+    }
+    .deliver-inner .deliver-image img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .deliver-inner{
+        flex-wrap: wrap;
+    }
+    .show-case{
+        flex-wrap: wrap;
+    }
+    .about-taber{
+        flex-wrap: wrap;
+    }
+    .answer-side{
+       max-width: 100%;
+    }
+    .work-process-badge{
+        margin-top: 30px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .menu-bar{
+        display: block;
+    }
 }
