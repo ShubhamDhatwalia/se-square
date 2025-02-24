@@ -543,7 +543,7 @@ nav ul li a:hover {
 
 .deliver-content ul li img {
     margin-right: 46px;
-    margin-bottom: 13px;
+    /* margin-bottom: 13px; */
 }
 .deliver-content ul li {
     display: flex;
@@ -607,6 +607,20 @@ nav ul li a:hover {
 .portfolioSwiper2 .swiper-slide,
 .portfolioSwiper3 .swiper-slide {
     width: auto !important;
+}
+
+@keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+.animated-logo{
+    animation: rotate360 8s linear infinite;
 }
 
 .faq-section {
