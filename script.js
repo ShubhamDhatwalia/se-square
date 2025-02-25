@@ -1,3 +1,10 @@
+
+
+AOS.init({
+    once: true,
+  });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     let brandSwiper = new Swiper(".brandSwiper", {
         slidesPerView: 'auto',
@@ -22,21 +29,25 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 5000,
         direction: "vertical",
         autoplay: { delay: 0 },
-       
+
     });
 
     let testimonialSwiper = new Swiper(".testimonialSwiper", {
         slidesPerView: 3,
         spaceBetween: 85,
         loop: true,
-        speed: 5000,
-        autoplay: { delay: 0 },
+        speed: 1000,
+        autoplay: { delay: 2000 },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
         breakpoints: {
             1400: { slidesPerView: 3, spaceBetween: 30 },
-            1000: { slidesPerView: 2, spaceBetween: 30 },
-            
-            200: { slidesPerView: 1, spaceBetween: 10,},
-          },
+            600: { slidesPerView: 2, spaceBetween: 30 },
+
+            200: { slidesPerView: 1, spaceBetween: 10, },
+        },
     });
 
     let projectsSwiper = new Swiper(".projectsSwiper", {
@@ -75,14 +86,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.querySelectorAll(".taber-content").forEach((tab) => {
 
-   
+
     tab.addEventListener("click", function () {
         let answer = tab.children[1].children[0];
         let isExpanded = answer.classList.contains("expanded");
         console.log(isExpanded);
 
         document.querySelectorAll(".taber-content").forEach((t) => {
-           
+
             t.children[1].children[0].classList.remove("expanded");
         });
 
@@ -121,3 +132,41 @@ function openOverlay() {
 function closeOverlay() {
     document.querySelector(".overlay").classList.remove("active");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll("nav ul li a");
+    const sections = document.querySelectorAll("section");
+    const offsetValue = 80; // Adjust based on navbar height
+
+    // Smooth scrolling
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - offsetValue, // Adjusted offset
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+
+});
+
+

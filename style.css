@@ -175,6 +175,10 @@ nav ul li a:hover {
     color: var(--secondary-color);
 }
 
+nav ul li a.active {
+    color: var(--secondary-color);
+}
+
 .hero-section {
     background-color: var(--primary-color);
     background-image: url(./assests/background-image.png);
@@ -206,10 +210,7 @@ nav ul li a:hover {
     margin-top: 37px;
 }
 
-..shopify-logos img {
-    width: 100%;
-    height: auto;
-}
+
 
 .hero-content .btn {
     padding: 15px 45px 17px 45px;
@@ -306,7 +307,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.swiper-wrapper {
+.brandSwiper .swiper-wrapper {
     padding: 0 130px;
     transition-timing-function: linear !important;
 }
@@ -447,6 +448,8 @@ nav ul li a:hover {
     max-height: 896px;
     max-width: 319px;
     padding: 0 !important;
+    transition-timing-function: linear !important;
+    
 }
 
 .showCaseSwiperDown .swiper-slide,
@@ -492,14 +495,18 @@ nav ul li a:hover {
 }
 
 .testimonialSwiper {
-    padding: 0 65px !important;
+    /* padding: 0 65px !important; */
     overflow: hidden;
+    padding-bottom: 50px !important;
 }
+
+
 
 .testimonialSwiper .swiper-slide {
     text-align: center;
-    margin-right: 85px !important;
+    /* margin-right: 85px !important; */
 }
+
 
 .testimonialSwiper .swiper-slide .images {
     text-align: center;
@@ -524,7 +531,7 @@ nav ul li a:hover {
 }
 
 .deliver-section {
-    padding-top: 271px;
+    padding-top: 140px;
     padding-bottom: 120px;
     background: #fffcf5;
 }
@@ -593,6 +600,10 @@ nav ul li a:hover {
     margin-right: 98px !important;
 }
 
+.projectsSwiper .swiper-wrapper{
+    transition-timing-function: linear !important;
+
+}
 .projectsSwiper .swiper-slide div {
     cursor: pointer;
 }
@@ -615,6 +626,8 @@ nav ul li a:hover {
 .portfolioSwiper2 .swiper-wrapper,
 .portfolioSwiper3 .swiper-wrapper {
     padding: 0 !important;
+    transition-timing-function: linear !important;
+
 }
 
 .portfolioSwiper1 .swiper-slide,
@@ -1279,6 +1292,7 @@ nav .menu-bar {
         align-items: center;
         text-align: center;
         padding-bottom: 50px;
+        margin-top: 60px ;
     }
 
     .main-footer {

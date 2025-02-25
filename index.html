@@ -17,12 +17,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="container">
-      <div class="nav-bar">
+      <div class="nav-bar" data-aos="fade-down" data-aos-duration="1000">
         <div class="logo">
           <img src="./assests/logo.svg" alt="" />
         </div>
@@ -34,15 +35,15 @@
             </li>
 
             <li>
-              <a href="#About">About</a>
+              <a href="#about">About</a>
             </li>
 
             <li>
-              <a href="#Portfolio">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
 
             <li>
-              <a href="#Testimonial">Testimonial</a>
+              <a href="#testimonial">Testimonial</a>
             </li>
 
             <li>
@@ -69,15 +70,15 @@
             </li>
 
             <li>
-              <a href="#About">About</a>
+              <a href="#about">About</a>
             </li>
 
             <li>
-              <a href="#Portfolio">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
 
             <li>
-              <a href="#Testimonial">Testimonial</a>
+              <a href="#testimonial">Testimonial</a>
             </li>
 
             <li>
@@ -101,10 +102,10 @@
     </div>
   </header>
 
-  <section class="hero-section">
+  <section id="home" class="hero-section">
     <div class="container">
       <div class="hero-inner">
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
           <h1>We deliver smart e-commerce solutions for you</h1>
 
           <div class="shopify-logos">
@@ -115,7 +116,7 @@
           <button type="button" class="btn">Get Started</button>
         </div>
 
-        <div class="hero-right">
+        <div class="hero-right" data-aos="zoom-in" data-aos-duration="1000">
           <div class="hero-images">
             <img src="./assests/Slider Animation.svg" alt="" />
           </div>
@@ -136,7 +137,7 @@
         </div>
       </div>
 
-      <div class="scroll-down">
+      <div class="scroll-down" data-aos="fade-up" data-aos-duration="1000">
         <div class="scroll-down-logo">
           <img class="animated-logo" src="./assests/scroll-down-badge.png" alt="" />
 
@@ -202,10 +203,10 @@
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
       <div class="about-taber">
-        <div class="answer-side">
+        <div class="answer-side" data-aos="fade-up" data-aos-duration="1000">
 
           <div class="answer" id="answer-plan">
             <h2>Plan</h2>
@@ -244,44 +245,44 @@
               experience.</p>
           </div>
 
-          <div class="work-process-badge">
+          <div class="work-process-badge" data-aos="fade-down" data-aos-duration="1000">
             <img class="animated-logo" src="./assests/work-process-badge.png" alt="">
           </div>
         </div>
 
 
 
-        <div class="question-side">
+        <div class="question-side" data-aos="fade-up" data-aos-duration="1000">
           <ul>
-            <li data-target="answer-plan" class="active"><span><span>01</span> Plan</span> <svg
+            <li data-target="answer-plan" data-aos="fade-up" data-aos-duration="1000" class="active"><span><span>01</span> Plan</span> <svg
                 xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
                   d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
                   fill="black" />
               </svg> </li>
-            <li data-target="answer-design"><span><span>02</span> Website/App Design</span> <svg
+            <li data-target="answer-design" data-aos="fade-up" data-aos-duration="1000"><span><span>02</span> Website/App Design</span> <svg
                 xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
                   d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
                   fill="black" />
               </svg> </li>
-            <li data-target="answer-development"><span><span>03</span> Development</span> <svg
+            <li data-target="answer-development" data-aos="fade-up" data-aos-duration="1000"><span><span>03</span> Development</span> <svg
                 xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
                   d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
                   fill="black" />
               </svg> </li>
-            <li data-target="answer-deploy"><span><span>04</span> Deploy</span> <svg xmlns="http://www.w3.org/2000/svg"
+            <li data-target="answer-deploy" data-aos="fade-up" data-aos-duration="1000"><span><span>04</span> Deploy</span> <svg xmlns="http://www.w3.org/2000/svg"
                 width="46" height="46" viewBox="0 0 46 46" fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
                   d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
                   fill="black" />
               </svg> </li>
-            <li data-target="answer-ab-testing"><span><span>05</span> A/B Testing</span> <svg
+            <li data-target="answer-ab-testing" data-aos="fade-up" data-aos-duration="1000"><span><span>05</span> A/B Testing</span> <svg
                 xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
@@ -294,13 +295,13 @@
 
 
       <div class="show-case">
-        <div class="show-case-content">
-          <h3>
+        <div class="show-case-content" data-aos="fade-up" data-aos-duration="1000">
+          <h3 data-aos="fade-up" data-aos-duration="1000">
             Let’s get together and talk about customizing your Shopify theme,
             or building a new store from scratch.
           </h3>
 
-          <div class="stores-details">
+          <div class="stores-details" data-aos="zoom-in" data-aos-duration="1000">
 
             <div class="side-one">
               <div class="shopify-stores">
@@ -341,10 +342,10 @@
 
           </div>
 
-          <button type="button" class="btn">Get Started</button>
+          <button type="button" class="btn" data-aos="fade-up" data-aos-duration="1000">Get Started</button>
         </div>
 
-        <div class="show-case-sliders">
+        <div class="show-case-sliders" data-aos="fade-left" data-aos-duration="1000">
           <div class="swiper showCaseSwiperDown">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -399,32 +400,32 @@
         </div>
       </div>
 
-      <h3 class="heading">
+      <h3 class="heading" data-aos="fade-up" data-aos-duration="1000">
         Working with some of the world’s most effective accelerators, we’ve
         mentored over 130 startups
       </h3>
 
       <div class="startups">
-        <div class="startup-logo">
+        <div class="startup-logo" data-aos="flip-right" data-aos-duration="1000">
           <img src="./assests/startup1.png" alt="" />
         </div>
-        <div class="startup-logo">
+        <div class="startup-logo" data-aos="flip-right" data-aos-duration="1000">
           <img src="./assests/startup2.png" alt="" />
         </div>
-        <div class="startup-logo">
+        <div class="startup-logo" data-aos="flip-right" data-aos-duration="1000">
           <img src="./assests/startup3.png" alt="" />
         </div>
-        <div class="startup-logo">
+        <div class="startup-logo" data-aos="flip-right" data-aos-duration="1000">
           <img src="./assests/startup4.png" alt="" />
         </div>
-        <div class="startup-logo">
+        <div class="startup-logo" data-aos="flip-right" data-aos-duration="1000">
           <img src="./assests/startup5.png" alt="" />
         </div>
       </div>
     </div>
   </section>
 
-  <section class="testimonial">
+  <section id="testimonial" class="testimonial">
     <div class="swiper testimonialSwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -468,42 +469,55 @@
           </p>
           <h6 class="client-name">John Smith</h6>
         </div>
+
+        <div class="swiper-slide">
+          <img src="./assests/quotes.png" alt="" />
+          <img src="./assests/rating-stars.png" alt="" />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text.
+          </p>
+          <h6 class="client-name">John Smith</h6>
+        </div>
       </div>
+
+      <div class="swiper-pagination"></div>
+
     </div>
   </section>
 
   <section class="deliver-section">
     <div class="container">
       <div class="deliver-inner">
-        <div class="deliver-image">
+        <div class="deliver-image" data-aos="flip-right" data-aos-duration="1000">
           <img src="./assests/deliver-image.png" alt="" />
         </div>
 
         <div class="deliver-content">
-          <h3>What we deliver on Shopify</h3>
-          <p>Mobile, Email and web Design | Web and App Development</p>
+          <h3 data-aos="fade-up" data-aos-duration="1000">What we deliver on Shopify</h3>
+          <p data-aos="fade-up" data-aos-duration="1000">Mobile, Email and web Design | Web and App Development</p>
 
           <ul>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="2000">
               <img src="./assests//mark.png" alt="" />Top Notch Features
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="2000">
               <img src="./assests//mark.png" alt="" />Budget-Friendly
               Subscriptions
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="2000">
               <img src="./assests//mark.png" alt="" />Reliable shopify
               developers
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="2000">
               <img src="./assests//mark.png" alt="" />Project management
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="2000">
               <img src="./assests//mark.png" alt="" />Flexible hiring models
             </li>
           </ul>
 
-          <button type="button" class="btn">
+          <button type="button" class="btn" data-aos="fade-up" data-aos-duration="2000">
             Let’s Connect
             <span><img src="./assests/arrow.png" alt="" /></span>
           </button>
@@ -683,12 +697,12 @@
     </div>
   </section>
 
-  <section class="portfolio">
-    <h2>Our Diverse Portfolio</h2>
+  <section id="portfolio" class="portfolio">
+    <h2 data-aos="fade-up" data-aos-duration="1000">Our Diverse Portfolio</h2>
 
     <div class="swiper portfolioSwiper1">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide" >
           <img src="./assests/portfolio1.png" alt="" />
         </div>
 
@@ -865,15 +879,15 @@
       </div>
   </section>
 
-  <section class="faq-section">
+  <section id="FAQ" class="faq-section">
     <div class="container">
       <div class="faq">
-        <h3>You ask. We answer</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing</p>
+        <h3 data-aos="fade-up" data-aos-duration="1000">You ask. We answer</h3>
+        <p data-aos="fade-up" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing</p>
 
         <div class="faq-taber">
 
-          <div class="taber-content">
+          <div class="taber-content" data-aos="fade-right" data-aos-duration="2000">
             <div class="tab-question">
               <img src="./assests/down-arrow.png" alt="">
               <h6>How to Speed Up E-Commerce Website Load Times?</h6>
@@ -884,7 +898,7 @@
             </div>
           </div>
 
-          <div class="taber-content">
+          <div class="taber-content" data-aos="fade-left" data-aos-duration="2000">
             <div class="tab-question">
               <img src="./assests/down-arrow.png" alt="">
               <h6>What's the First Step in E-Commerce Development?</h6>
@@ -895,7 +909,7 @@
             </div>
           </div>
 
-          <div class="taber-content">
+          <div class="taber-content" data-aos="fade-right" data-aos-duration="2000">
             <div class="tab-question">
               <img src="./assests/down-arrow.png" alt="">
               <h6>How to Ensure a Smooth Customer Experience?</h6>
@@ -907,7 +921,7 @@
           </div>
 
 
-          <div class="taber-content">
+          <div class="taber-content" data-aos="fade-left" data-aos-duration="2000">
             <div class="tab-question">
               <img src="./assests/down-arrow.png" alt="">
               <h6>How to Keep E-Commerce Platforms Secure?</h6>
@@ -918,7 +932,7 @@
             </div>
           </div>
 
-          <div class="taber-content">
+          <div class="taber-content" data-aos="fade-right" data-aos-duration="2000">
             <div class="tab-question">
               <img src="./assests/down-arrow.png" alt="">
               <h6>How to Enhance E-Commerce Conversions?</h6>
@@ -929,7 +943,7 @@
             </div>
           </div>
 
-          <div class="taber-content">
+          <div class="taber-content" data-aos="fade-left" data-aos-duration="2000">
             <div class="tab-question">
               <img src="./assests/down-arrow.png" alt="">
               <h6>Why Payment Security Is Vital for Online Stores</h6>
@@ -1034,6 +1048,7 @@
     </section>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script src="/script.js"></script>
