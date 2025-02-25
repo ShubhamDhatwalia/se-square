@@ -95,18 +95,23 @@ document.querySelectorAll(".taber-content").forEach((tab) => {
 
 document.querySelectorAll(".question-side li").forEach((item) => {
     item.addEventListener("click", function () {
-      let target = this.getAttribute("data-target");
-  
-      
-      document.querySelectorAll(".answer-side .answer").forEach((answer) => {
-        answer.style.display = "none";
-      });
-  
-      
-      document.getElementById(target).style.display = "block";
+        let target = this.getAttribute("data-target");
+
+
+        document.querySelectorAll(".question-side li").forEach((li) => {
+            li.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+        document.querySelectorAll(".answer-side .answer").forEach((answer) => {
+            answer.style.display = "none";
+        });
+
+        document.getElementById(target).style.display = "block";
     });
-  });
-  
+});
+
 
 
 function openOverlay() {
