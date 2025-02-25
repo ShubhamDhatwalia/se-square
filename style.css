@@ -1270,6 +1270,9 @@ nav .menu-bar {
 }
 
 @media screen and (max-width: 425px) {
+    .answer-side p{
+        margin-top: 30px;
+    }
 
     .show-case-content h3{
         text-align: left;
