@@ -206,7 +206,6 @@ nav ul li a.active {
 .shopify-logos {
     display: flex;
     gap: 14px;
-    flex-wrap: wrap;
     margin-top: 37px;
 }
 
@@ -1079,10 +1078,12 @@ nav .menu-bar {
 
     .answer-side {
         max-width: 100%;
+        order: 2;
     }
 
     .work-process-badge {
         margin-top: 30px;
+        order: 1;
     }
 
     nav ul {
@@ -1269,6 +1270,10 @@ nav .menu-bar {
 }
 
 @media screen and (max-width: 425px) {
+
+    .show-case-content h3{
+        text-align: left;
+    }
     h1 {
         font-size: 40px;
     }
@@ -1333,5 +1338,9 @@ nav .menu-bar {
     }
     .question-side ul li span {
         margin-right: 20px !important;
+    }
+    .shopify-logos img{
+        width: 48%;
+        height: 65px;
     }
 }
