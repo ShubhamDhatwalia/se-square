@@ -125,6 +125,16 @@ document.querySelectorAll(".question-side li").forEach((item) => {
 
 
 
+
+document.querySelectorAll(".overlay nav ul li a").forEach((link) => {
+
+
+    link.addEventListener("click", function () {
+        document.querySelector(".overlay").classList.remove("active");
+})
+});
+
+
 function openOverlay() {
     document.querySelector(".overlay").classList.add("active");
 }
