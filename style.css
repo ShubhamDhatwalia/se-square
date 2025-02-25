@@ -1120,7 +1120,7 @@ nav .menu-bar {
     }
 
     .shopify-logos {
-
+        align-items: center;
         justify-content: center;
     }
 
@@ -1343,4 +1343,5 @@ nav .menu-bar {
         width: 48%;
         height: 65px;
     }
+    
 }
