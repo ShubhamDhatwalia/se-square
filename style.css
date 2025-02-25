@@ -182,7 +182,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     height: auto;
     padding-bottom: 52px;
-    position: relative;
+    /* position: relative; */
 }
 
 .hero-inner {
@@ -202,7 +202,13 @@ nav ul li a:hover {
 .shopify-logos {
     display: flex;
     gap: 14px;
+    flex-wrap: wrap;
     margin-top: 37px;
+}
+
+..shopify-logos img {
+    width: 100%;
+    height: auto;
 }
 
 .hero-content .btn {
@@ -212,16 +218,17 @@ nav ul li a:hover {
 
 .hero-right {
     flex: 50%;
+    position: relative;
 }
 
 .hero-images {
     position: absolute;
-    top: 14px;
-    right: 0;
+
+    width: 120%;
 }
 
 .hero-images img {
-    max-width: 923px;
+
     width: 100%;
     height: auto;
 }
@@ -242,26 +249,13 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.badge-partner {
-    top: 235px;
-    right: 722px;
-}
 
-.badge-experts {
-    top: 392px;
-    right: 31px;
-}
-
-.badge-app-store {
-    bottom: 52px;
-    right: 530px;
-}
 
 .project-badge,
 .awards-badge {
     position: absolute;
-    bottom: 44px;
-    right: 303px;
+    bottom: -44px;
+    right: 200px;
     text-align: center;
 }
 
@@ -277,7 +271,7 @@ nav ul li a:hover {
 }
 
 .awards-badge {
-    right: 160px;
+    right: 0px;
 }
 
 .scroll-down {
@@ -802,6 +796,9 @@ input::placeholder {
 .main-footer .main-footer-background {
     position: absolute;
     right: 0;
+    top: 61px;
+    width: 39%;
+    height: auto;
 }
 
 .main-footer h2 {
@@ -949,13 +946,33 @@ nav .menu-bar {
     margin: 0px;
 }
 
+.hero-badges {
+    display: flex;
+    gap: 100px;
+    justify-content: end;
+}
+
 @media screen and (max-width: 1600px) {
     .container {
         padding: 0 20px;
     }
+
+    .hero-images {
+        top: 10%;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .hero-images {
+        top: 12% !important;
+        width: 100%;
+    }
+
     nav ul {
         gap: 40px !important;
     }
@@ -984,9 +1001,21 @@ nav .menu-bar {
 }
 
 @media screen and (max-width: 1200px) {
-    .sitemap ul, .services ul, .get-in-touch ul{
+    .footer-categories {
+        margin-top: 100px;
+    }
+
+    .hero-images {
+        top: 20% !important;
+        width: 100%;
+    }
+
+    .sitemap ul,
+    .services ul,
+    .get-in-touch ul {
         margin-top: 10px;
     }
+
     .logo img {
         height: 44px;
     }
@@ -1014,11 +1043,21 @@ nav .menu-bar {
 
     .deliver-inner {
         flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .deliver-content {
+        padding-top: 0;
     }
 
     .show-case {
         flex-wrap: wrap;
-        margin-top: 60px;
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .about {
+        padding-top: 60px;
     }
 
     .about-taber {
@@ -1042,21 +1081,71 @@ nav .menu-bar {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .hero-inner{
+@media screen and (max-width: 1024px) {
+    .hero-inner {
         flex-wrap: wrap;
     }
-    .deliver-content .btn{
+
+    .hero-images,
+    .project-badge,
+    .awards-badge {
+        position: static;
+    }
+
+    .hero-right {
+        flex: 100%;
+        order: 1;
+    }
+
+    .hero-content {
+        flex: 100%;
+        order: 2;
+        margin: auto;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .shopify-logos {
+
+        justify-content: center;
+    }
+
+    .hero-content .btn {
+
+        margin-top: 50px;
+    }
+
+    .scroll-down {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-footer .main-footer-background {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        width: 53%;
+        height: auto;
+    }
+
+    .hero-images {
+        margin-top: 15%;
+    }
+
+    .deliver-content .btn {
         margin-top: 40px;
     }
 
-    .work-process-badge img{
+    .work-process-badge img {
         width: 140px;
         height: auto;
     }
 
     .view-all-projects-slider {
         padding: 20px 0;
+        margin-top: 50px;
     }
 
     .brands {
@@ -1129,6 +1218,7 @@ nav .menu-bar {
 
     .deliver-section {
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .faq {
@@ -1136,7 +1226,7 @@ nav .menu-bar {
     }
 
     .main-footer h2 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .subscription h3 {
@@ -1160,15 +1250,71 @@ nav .menu-bar {
     }
 
     .faq-section {
-        padding-top: 60px;
+        padding: 50px 0;
     }
+
 }
 
 @media screen and (max-width: 425px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .hero-badges h4 {
+        font-size: 30px;
+    }
+
+    .hero-badges {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .hero-images {
+        margin-top: 20% !important;
+    }
+
     .footer-categories {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .main-footer {
+        padding-top: 50px;
+    }
+
+    .btn {
+
+        font-size: 12px;
+        padding: 12px 44px 10px 12px;
+
+    }
+    .btn span {
+        width: 32px !important;
+        height: 32px !important;
+        
+    }
+    .main-footer .btn {
+        
+        margin-top: 30px;
+    }
+    .nav-bar{
+        padding: 10px 20px;
+    }
+    .tab-answer p{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .tab-question h6{
+        font-size: 18px;
+    }
+    .faq p{
+        line-height: normal;
+        font-size: 18px;
+    }
+    .heading{
+        padding-top: 50px;
     }
 }
