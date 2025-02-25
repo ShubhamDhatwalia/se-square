@@ -1343,5 +1343,11 @@ nav .menu-bar {
         width: 48%;
         height: 65px;
     }
+    .deliver-content ul li{
+        font-size: 18px;
+    }
+    .deliver-content ul li img{
+        margin-right: 25px;
+    }
     
 }
