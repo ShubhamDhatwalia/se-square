@@ -1331,4 +1331,7 @@ nav .menu-bar {
     .heading{
         padding-top: 50px;
     }
+    .question-side ul li span {
+        margin-right: 20px !important;
+    }
 }
