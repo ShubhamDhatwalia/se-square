@@ -1177,7 +1177,7 @@ nav .menu-bar {
     }
 
     .question-side ul li {
-        padding: 10px 0;
+        padding: 12px 0;
     }
 
     h3 {
@@ -1349,5 +1349,11 @@ nav .menu-bar {
     .deliver-content ul li img{
         margin-right: 25px;
     }
-    
+    .shopify-stores p{
+        font-size: 15px;
+    }
+    .question-side ul li svg{
+        width: 35px;
+        height: 35px;
+    }
 }
