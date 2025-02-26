@@ -191,9 +191,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Active class on scroll
+    
     window.addEventListener("scroll", function () {
-        let currentSection = "home"; // Default to home
+        let currentSection = "home"; 
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop - offsetValue;
@@ -204,12 +204,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Special case: If at the top, keep "Home" active
+        
         if (sections.length > 0 && window.scrollY < sections[1].offsetTop - offsetValue) {
             currentSection = "home";
         }
 
-        // Update active class
+      
         navLinks.forEach(link => {
             link.classList.remove("active");
             if (link.getAttribute("href").substring(1) === currentSection) {
