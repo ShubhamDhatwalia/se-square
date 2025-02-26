@@ -153,7 +153,21 @@ p {
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     z-index: 2;
-    width: calc(100% - 30px) !important;
+    transition: top 0.3s ease, max-width 0.3s ease, width 0.3s ease ; 
+}
+.nav-bar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-bar.shrink {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    top: 0;
 }
 
 nav ul {
@@ -448,7 +462,7 @@ nav ul li a.active {
     max-width: 319px;
     padding: 0 !important;
     transition-timing-function: linear !important;
-    
+
 }
 
 .showCaseSwiperDown .swiper-slide,
@@ -599,10 +613,11 @@ nav ul li a.active {
     margin-right: 98px !important;
 }
 
-.projectsSwiper .swiper-wrapper{
+.projectsSwiper .swiper-wrapper {
     transition-timing-function: linear !important;
 
 }
+
 .projectsSwiper .swiper-slide div {
     cursor: pointer;
 }
@@ -610,6 +625,7 @@ nav ul li a.active {
 .portfolio {
     text-align: center;
     background: #fffcf5;
+    padding-bottom: 140px;
 }
 
 .portfolioSwiper1 {
@@ -657,7 +673,7 @@ nav ul li a.active {
 }
 
 .faq-section {
-    padding-top: 144px;
+   
     padding-bottom: 140px;
     background: #fffcf5;
 }
@@ -973,6 +989,8 @@ nav .menu-bar {
         top: 10%;
         width: 100%;
     }
+
+   
 }
 
 @media screen and (max-width: 1440px) {
@@ -1264,29 +1282,36 @@ nav .menu-bar {
     }
 
     .faq-section {
-        padding: 50px 0;
+        padding: 0 0 5px 0 0;
+    }
+    .portfolio{
+        padding-bottom: 50px;
     }
 
 }
 
 @media screen and (max-width: 425px) {
-    .faq-taber{
-        margin-top: 30px;
-    }
-    .subscription .input-group button{
-        font-size: 16px;
-    }
-    .subscription input{
-        padding:  5px 0;
-        font-size: 16px;
-    }
-    .answer-side p{
+    .faq-taber {
         margin-top: 30px;
     }
 
-    .show-case-content h3{
+    .subscription .input-group button {
+        font-size: 16px;
+    }
+
+    .subscription input {
+        padding: 5px 0;
+        font-size: 16px;
+    }
+
+    .answer-side p {
+        margin-top: 30px;
+    }
+
+    .show-case-content h3 {
         text-align: left;
     }
+
     h1 {
         font-size: 40px;
     }
@@ -1310,7 +1335,7 @@ nav .menu-bar {
         align-items: center;
         text-align: center;
         padding-bottom: 50px;
-        margin-top: 60px ;
+        margin-top: 60px;
     }
 
     .main-footer {
@@ -1323,49 +1348,62 @@ nav .menu-bar {
         padding: 12px 44px 10px 12px;
 
     }
+
     .btn span {
         width: 32px !important;
         height: 32px !important;
-        
+
     }
+
     .main-footer .btn {
-        
+
         margin-top: 30px;
     }
-    .nav-bar{
+
+    .nav-bar {
         padding: 10px 20px;
     }
-    .tab-answer p{
+
+    .tab-answer p {
         font-size: 16px;
         line-height: normal;
     }
-    .tab-question h6{
+
+    .tab-question h6 {
         font-size: 18px;
     }
-    .faq p{
+
+    .faq p {
         line-height: normal;
         font-size: 16px;
     }
-    .heading{
+
+    .heading {
         padding-top: 50px;
     }
+
     .question-side ul li span {
         margin-right: 20px !important;
     }
-    .shopify-logos img{
+
+    .shopify-logos img {
         width: 48%;
         height: 65px;
     }
-    .deliver-content ul li{
+
+    .deliver-content ul li {
         font-size: 18px;
     }
-    .deliver-content ul li img{
+
+    .deliver-content ul li img {
         margin-right: 25px;
     }
-    .shopify-stores p{
+
+    .shopify-stores p {
         font-size: 15px;
     }
-    .question-side ul li svg{
+
+    .question-side ul li svg {
         width: 35px;
         height: 35px;
     }

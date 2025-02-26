@@ -144,12 +144,6 @@ function closeOverlay() {
 }
 
 
-
-
-
-
-
-
 function startCounter(counter) {
     let target = +counter.getAttribute("data-target");
     let count = 0;
@@ -174,15 +168,12 @@ document.querySelectorAll(".counter").forEach(startCounter);
 
 
 
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll("nav ul li a");
     const sections = document.querySelectorAll("section");
-    const offsetValue = 80; // Adjust based on navbar height
+    const offsetValue = 95; // Adjust based on navbar height
+
+   
 
     // Smooth scrolling
     navLinks.forEach(link => {
@@ -193,14 +184,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (targetSection) {
                 window.scrollTo({
-                    top: targetSection.offsetTop - offsetValue, // Adjusted offset
+                    top: targetSection.offsetTop - offsetValue,
                     behavior: "smooth"
                 });
             }
         });
     });
 
+    // Active class on scroll
+    window.addEventListener("scroll", function () {
+        let currentSection = "home"; // Default to home
 
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - offsetValue;
+            const sectionHeight = section.offsetHeight;
+            
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        // Special case: If at the top, keep "Home" active
+        if (sections.length > 0 && window.scrollY < sections[1].offsetTop - offsetValue) {
+            currentSection = "home";
+        }
+
+        // Update active class
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").substring(1) === currentSection) {
+                link.classList.add("active");
+            }
+        });
+    });
 });
 
 
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.querySelector(".nav-bar").classList.add("shrink");
+    
+  } else {
+    document.querySelector(".nav-bar").classList.remove("shrink");
+
+  }
+}
