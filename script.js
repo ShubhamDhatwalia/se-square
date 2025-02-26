@@ -150,6 +150,30 @@ function closeOverlay() {
 
 
 
+function startCounter(counter) {
+    let target = +counter.getAttribute("data-target");
+    let count = 0;
+    let speed = target / 300; // Adjust speed
+    let hasPlus = counter.innerText.includes("+"); // Check if the original text had "+"
+
+    function updateCounter() {
+        count += speed;
+        if (count < target) {
+            counter.innerText = Math.ceil(count) + (hasPlus ? "+" : "");
+            requestAnimationFrame(updateCounter);
+        } else {
+            counter.innerText = target + (hasPlus ? "+" : ""); // Add "+" if it was there originally
+        }
+    }
+
+    updateCounter();
+}
+
+// Select all counters and start animation
+document.querySelectorAll(".counter").forEach(startCounter);
+
+
+
 
 
 
