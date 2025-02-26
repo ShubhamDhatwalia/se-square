@@ -169,7 +169,7 @@ document.querySelectorAll(".counter").forEach(startCounter);
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll("nav ul li a");
+    const navLinks = document.querySelectorAll("nav ul li a, .sitemap ul li a");
     const sections = document.querySelectorAll("section");
     const offsetValue = 95; // Adjust based on navbar height
 
