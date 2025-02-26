@@ -22,45 +22,46 @@
 </head>
 
 <body>
-  <header >
+  <header>
     <div class="container">
-      <div class="nav-bar"  >
-      
-        <div class="container" data-aos="fade-down" data-aos-duration="1000" >
+      <div class="nav-bar">
+
+        <div class="container" data-aos="fade-down" data-aos-duration="1000">
           <div class="logo">
             <a href="#"><img src="./assests/logo.svg" alt="" /></a>
           </div>
-  
+
           <nav>
             <ul>
               <li>
                 <a class="active" href="#home">Home</a>
               </li>
-  
+
               <li>
                 <a href="#about">About</a>
               </li>
-  
+
               <li>
                 <a href="#portfolio">Portfolio</a>
               </li>
-  
+
               <li>
                 <a href="#testimonial">Testimonial</a>
               </li>
-  
+
               <li>
                 <a href="#FAQ">FAQ</a>
-  
-                <button type="button" class="btn">
-                  Let’s Connect
-                  <span><img src="./assests/arrow.png" alt="" /></span>
-                </button>
               </li>
             </ul>
-  
-            <i class="fa-solid fa-bars menu-bar" onclick="openOverlay()"></i>
+            <button type="button" class="btn" onclick="window.location.href='#'">
+              Let’s Connect
+              <span><img src="./assests/arrow.png" alt="" /></span>
+            </button>
+
+
           </nav>
+
+          <i class="fa-solid fa-bars menu-bar" onclick="openOverlay()"></i>
         </div>
       </div>
 
@@ -117,7 +118,7 @@
             <img class="img-2" src="./assests/shopify-plus-logo.svg" alt="" />
           </div>
 
-          <button type="button" class="btn">Get Started</button>
+          <button type="button" class="btn" onclick="window.location.href='#'">Get Started</button>
         </div>
 
         <div class="hero-right" data-aos="zoom-in" data-aos-duration="1000">
@@ -258,36 +259,42 @@
 
         <div class="question-side" data-aos="fade-up" data-aos-duration="1000">
           <ul>
-            <li data-target="answer-plan" data-aos="fade-up" data-aos-duration="1000" class="active"><span><span>01</span> Plan</span> <svg
-                xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <li data-target="answer-plan" data-aos="fade-up" data-aos-duration="1000" class="active">
+              <span><span>01</span> Plan</span> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                viewBox="0 0 46 46" fill="none">
+                <rect width="46" height="46" rx="23" fill="#EBE4D6" />
+                <path
+                  d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
+                  fill="black" />
+              </svg>
+            </li>
+            <li data-target="answer-design" data-aos="fade-up" data-aos-duration="1000"><span><span>02</span>
+                Website/App Design</span> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                viewBox="0 0 46 46" fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
                   d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
                   fill="black" />
               </svg> </li>
-            <li data-target="answer-design" data-aos="fade-up" data-aos-duration="1000"><span><span>02</span> Website/App Design</span> <svg
-                xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <li data-target="answer-development" data-aos="fade-up" data-aos-duration="1000"><span><span>03</span>
+                Development</span> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
                   d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
                   fill="black" />
               </svg> </li>
-            <li data-target="answer-development" data-aos="fade-up" data-aos-duration="1000"><span><span>03</span> Development</span> <svg
-                xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <li data-target="answer-deploy" data-aos="fade-up" data-aos-duration="1000"><span><span>04</span>
+                Deploy</span> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
                   d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
                   fill="black" />
               </svg> </li>
-            <li data-target="answer-deploy" data-aos="fade-up" data-aos-duration="1000"><span><span>04</span> Deploy</span> <svg xmlns="http://www.w3.org/2000/svg"
-                width="46" height="46" viewBox="0 0 46 46" fill="none">
-                <rect width="46" height="46" rx="23" fill="#EBE4D6" />
-                <path
-                  d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
-                  fill="black" />
-              </svg> </li>
-            <li data-target="answer-ab-testing" data-aos="fade-up" data-aos-duration="1000"><span><span>05</span> A/B Testing</span> <svg
-                xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <li data-target="answer-ab-testing" data-aos="fade-up" data-aos-duration="1000"><span><span>05</span> A/B
+                Testing</span> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                fill="none">
                 <rect width="46" height="46" rx="23" fill="#EBE4D6" />
                 <path
                   d="M34.2071 23.7071C34.5976 23.3166 34.5976 22.6834 34.2071 22.2929L27.8431 15.9289C27.4526 15.5384 26.8195 15.5384 26.4289 15.9289C26.0384 16.3195 26.0384 16.9526 26.4289 17.3431L32.0858 23L26.4289 28.6569C26.0384 29.0474 26.0384 29.6805 26.4289 30.0711C26.8195 30.4616 27.4526 30.4616 27.8431 30.0711L34.2071 23.7071ZM12 24H33.5V22H12V24Z"
@@ -338,7 +345,7 @@
               <div class="shopify-stores">
                 <img src="./assests/awards-logo.png" alt="" />
                 <div>
-                  <h6 class="counter" data-target="10" >10+</h6>
+                  <h6 class="counter" data-target="10">10+</h6>
                   <p>Awards for Arctic Grey</p>
                 </div>
               </div>
@@ -346,7 +353,8 @@
 
           </div>
 
-          <button type="button" class="btn" data-aos="fade-up" data-aos-duration="1000">Get Started</button>
+          <button type="button" class="btn" data-aos="fade-up" data-aos-duration="1000"
+            onclick="window.location.href='#'">Get Started</button>
         </div>
 
         <div class="show-case-sliders" data-aos="fade-up" data-aos-duration="1000">
@@ -521,7 +529,8 @@
             </li>
           </ul>
 
-          <button type="button" class="btn" data-aos="fade-up" data-aos-duration="2000">
+          <button type="button" class="btn" data-aos="fade-up" data-aos-duration="2000"
+            onclick="window.location.href='#'">
             Let’s Connect
             <span><img src="./assests/arrow.png" alt="" /></span>
           </button>
@@ -706,7 +715,7 @@
 
     <div class="swiper portfolioSwiper1">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" >
+        <div class="swiper-slide">
           <img src="./assests/portfolio1.png" alt="" />
         </div>
 
@@ -991,7 +1000,7 @@
           <h2>No more words, just results - let’s go.</h2>
 
 
-          <button type="button" class="btn">
+          <button type="button" class="btn" onclick="window.location.href='#'">
             Let’s Connect
             <span><img src="./assests/arrow.png" alt="" /></span>
           </button>

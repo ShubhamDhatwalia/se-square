@@ -113,27 +113,49 @@ p {
     line-height: normal;
     border-radius: 500px;
     background: var(--secondary-color);
-    padding: 15px 67px 17px 25px;
+    padding: 4px 4px 4px 25px;
     border: none;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
+
 
 .btn span {
     width: 46px !important;
     height: 46px !important;
     border-radius: 500px;
     background: #fff;
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    
+}
+
+@keyframes btn-animation {
+    0%   { left:-60px; top:0px;}
+    100%  { left:0px; top:0px;}
+    
+  }
+
+.btn span img {
+    
+    position: relative;
+
+}
+
+.btn:hover span img {
+    animation-name: btn-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
 .btn:hover {
     cursor: pointer;
+    background: #007558;
+    
 }
 
 .nav-bar {
@@ -153,9 +175,10 @@ p {
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     z-index: 2;
-    transition: top 0.3s ease, max-width 0.3s ease, width 0.3s ease ; 
+    transition: top 0.3s ease, max-width 0.3s ease, width 0.3s ease;
 }
-.nav-bar .container{
+
+.nav-bar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,6 +198,10 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 72px;
+}
+nav{
+    display: flex;
+    align-items: center;
 }
 
 nav .btn {
@@ -673,7 +700,7 @@ nav ul li a.active {
 }
 
 .faq-section {
-   
+
     padding-bottom: 140px;
     background: #fffcf5;
 }
@@ -887,6 +914,19 @@ input::placeholder {
 
 .footer-categories ul li a:hover {
     opacity: 1;
+
+}
+
+.footer-categories ul li a img {
+    transition: transform 0.5s ease;
+}
+
+.footer-categories ul li a img:hover {
+    transform: rotate(360deg);
+}
+
+.footer-categories ul li a img:not(:hover) {
+    transform: rotate(0deg);
 }
 
 .footer-categories p {
@@ -917,11 +957,11 @@ input::placeholder {
     font-weight: 300;
 }
 
-nav i {
+header .nav-bar i {
     font-size: 32px;
 }
 
-nav .menu-bar {
+header .nav-bar .menu-bar {
     display: none;
 }
 
@@ -939,6 +979,9 @@ nav .menu-bar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.overlay nav{
+    display: block ;
 }
 
 .overlay.active {
@@ -980,6 +1023,12 @@ nav .menu-bar {
     justify-content: end;
 }
 
+.footer-categories ul li a:hover {
+    transform: rotate(360deg);
+}
+
+
+
 @media screen and (max-width: 1600px) {
     .container {
         padding: 0 20px;
@@ -990,7 +1039,7 @@ nav .menu-bar {
         width: 100%;
     }
 
-   
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -1104,12 +1153,12 @@ nav .menu-bar {
         order: 1;
     }
 
-    nav ul {
+    nav {
         display: none;
     }
 
-    nav .menu-bar {
-        display: block;
+    header .nav-bar .menu-bar {
+        display: block !important;
     }
 }
 
@@ -1284,7 +1333,8 @@ nav .menu-bar {
     .faq-section {
         padding: 0 0 5px 0 0;
     }
-    .portfolio{
+
+    .portfolio {
         padding-bottom: 50px;
     }
 
